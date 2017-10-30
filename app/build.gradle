@@ -3,31 +3,40 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.2"
-
+    signingConfigs {
+        omarea_Signing {
+            keyAlias 'omarea.com'
+            keyPassword 'I0140728'
+            storeFile file('D:/omoarea.jks')
+            storePassword 'I0140728'
+        }
+    }
     defaultConfig {
-        applicationId "com.performancetweaker.app"
+        applicationId 'com.omarea.kernel'
         versionCode 12
         versionName "0.2.1"
         minSdkVersion 15
         targetSdkVersion 26
     }
-
     buildTypes {
         debug {
             debuggable true
             minifyEnabled false
             buildConfigField 'boolean', 'ENABLE_ANALYTICS', 'false'
+            signingConfig signingConfigs.omarea_Signing
         }
         release {
             debuggable false
-            minifyEnabled false
+            minifyEnabled true
             buildConfigField 'boolean', 'ENABLE_ANALYTICS', 'true'
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.omarea_Signing
         }
     }
-
     lintOptions {
         abortOnError false
+    }
+    productFlavors {
     }
 }
 
@@ -41,11 +50,9 @@ repositories {
 }
 
 dependencies {
-
     ext {
         supportLibVersion = '26.1.0'
     }
-
     compile project(':androidCommon')
     compile "com.android.support:appcompat-v7:${supportLibVersion}"
     compile "com.android.support:design:${supportLibVersion}"

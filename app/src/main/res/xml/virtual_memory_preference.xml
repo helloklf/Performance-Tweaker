@@ -2,8 +2,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory
-            android:key="vm_pref"
-            android:title="Virtual Memory">
-
+        android:key="vm_pref"
+        android:title="@string/vm">
     </PreferenceCategory>
 </PreferenceScreen>

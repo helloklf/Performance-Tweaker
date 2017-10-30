@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="cpuset_ranage"
+        android:title="@string/cpus_ranage">
+        <ListPreference
+            android:enabled="false"
+            android:summary="@string/cpus_ranage_desc"
+            android:title="Tip："></ListPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/cpuset_system_background_cpus">
+        <MultiSelectListPreference
+            android:key="cpuset_system_background_cpus"
+            android:summary="@string/cpuset_system_background_cpus_desc"></MultiSelectListPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/cpuset_background_cpus">
+        <MultiSelectListPreference
+            android:key="cpuset_background_cpus"
+            android:summary="@string/cpuset_background_cpus_desc"></MultiSelectListPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/cpuset_foreground_cpus">
+        <MultiSelectListPreference
+            android:enabled="false"
+            android:key="cpuset_foreground_cpus"
+            android:summary="@string/cpuset_foreground_cpus_desc"
+            android:title=""></MultiSelectListPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/cpuset_foreground_boost_cpus">
+        <MultiSelectListPreference
+            android:enabled="false"
+            android:key="cpuset_foreground_boost_cpus"
+            android:summary="@string/cpuset_foreground_boost_cpus_desc"
+            android:title=""></MultiSelectListPreference>
+    </PreferenceCategory>
+</PreferenceScreen>

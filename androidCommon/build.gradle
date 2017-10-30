@@ -2,8 +2,16 @@ apply plugin: 'com.android.library'
 
 android {
   compileSdkVersion 25
-  buildToolsVersion "25.0.3"
+  buildToolsVersion '26.0.2'
 
+  signingConfigs {
+    omarea_Signing {
+      keyAlias 'omarea.com'
+      keyPassword 'I0140728'
+      storeFile file('D:/omoarea.jks')
+      storePassword 'I0140728'
+    }
+  }
   defaultConfig {
     minSdkVersion 8
     targetSdkVersion 25
@@ -13,6 +21,10 @@ android {
     release {
       minifyEnabled false
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+      signingConfig signingConfigs.omarea_Signing
+    }
+    debug {
+      signingConfig signingConfigs.omarea_Signing
     }
   }
 }

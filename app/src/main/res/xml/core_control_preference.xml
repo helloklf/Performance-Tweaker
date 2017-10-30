@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/core_toggle">
+        <CheckBoxPreference android:summaryOn="Online" android:summaryOff="Offline" android:key="core_control_core_0" android:persistent="true" android:title="CPU0"></CheckBoxPreference>
+        <CheckBoxPreference android:summaryOn="Online" android:summaryOff="Offline" android:key="core_control_core_1" android:persistent="true" android:title="CPU1"></CheckBoxPreference>
+        <CheckBoxPreference android:summaryOn="Online" android:summaryOff="Offline" android:key="core_control_core_2" android:persistent="true" android:title="CPU2"></CheckBoxPreference>
+        <CheckBoxPreference android:summaryOn="Online" android:summaryOff="Offline" android:key="core_control_core_3" android:persistent="true" android:title="CPU3"></CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/core_toggle_bigcore" android:key="core_control_bigcores">
+        <CheckBoxPreference android:summaryOn="Online" android:summaryOff="Offline" android:key="core_control_core_4" android:persistent="true" android:title="CPU4"></CheckBoxPreference>
+        <CheckBoxPreference android:summaryOn="Online" android:summaryOff="Offline" android:key="core_control_core_5" android:persistent="true" android:title="CPU5"></CheckBoxPreference>
+        <CheckBoxPreference android:summaryOn="Online" android:summaryOff="Offline" android:key="core_control_core_6" android:persistent="true" android:title="CPU6"></CheckBoxPreference>
+        <CheckBoxPreference android:summaryOn="Online" android:summaryOff="Offline" android:key="core_control_core_7" android:persistent="true" android:title="CPU7"></CheckBoxPreference>
+    </PreferenceCategory>
+</PreferenceScreen>

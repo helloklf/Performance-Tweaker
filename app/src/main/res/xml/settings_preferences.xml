@@ -4,10 +4,10 @@
     <PreferenceCategory android:title="General">
 
         <MultiSelectListPreference
-            android:dialogTitle="Apply On Boot"
+            android:dialogTitle="@string/boot_auto_apply"
             android:key="select_apply_on_boot"
-            android:summary="Select Settings You Want to Apply on Boot"
-            android:title="Apply on Boot"></MultiSelectListPreference>
+            android:summary="@string/boot_applay_select_settings"
+            android:title="@string/boot_auto_apply"></MultiSelectListPreference>
 
     </PreferenceCategory>
 </PreferenceScreen>

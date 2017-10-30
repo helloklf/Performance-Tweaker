@@ -31,12 +31,12 @@
             android:fontFamily="sans-serif-light"
             android:maxLines="1"
             android:text="Name"
-            android:textSize="@dimen/text_size_medium"/>
+            android:textSize="@dimen/text_size_medium" />
 
         <LinearLayout
             android:id="@+id/LinearLayoutFqn"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/wakelock_duration"
@@ -53,7 +53,7 @@
         <LinearLayout
             android:id="@+id/LinearLayout03"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/kernel_wakelock_count"
@@ -69,6 +69,7 @@
         </LinearLayout>
 
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/LinearLayoutGauge"
         android:layout_width="wrap_content"
@@ -83,9 +84,8 @@
             custom:donut_text_size="10sp"
             custom:donut_finished_stroke_width="4dp"
             custom:donut_unfinished_stroke_width="4dp"
-            custom:donut_max="100"
-            />
-
-        </LinearLayout>
+            custom:donut_max="100" />
 
     </LinearLayout>
+
+</LinearLayout>

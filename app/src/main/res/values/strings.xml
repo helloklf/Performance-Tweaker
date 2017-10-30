@@ -1,39 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">Performance Tweaker</string>
-    <string name="report_to_github">Report an Issue</string>
-    <string name="okbutton">OK</string>
-    <string name="about">About</string>
-    <string name="error">Error</string>
+    <string name="app_name">懒人调频</string>
+    <string name="refresh">刷新</string>
+    <string name="reset_times">重置时间</string>
+    <string name="restore_times">还原时间</string>
+    <string name="report_to_github">报告一个问题</string>
+    <string name="okbutton">好的</string>
+    <string name="about">关于</string>
+    <string name="error">错误</string>
     <string name="doesnt_support_cpufs">Your Phone Does Not Supports Cpu Frequency Scaling</string>
-    <string name="continu">Continue</string>
-    <string name="exit">Exit</string>
-    <string name="noroot">Your Phone Does Not Have Root Access</string>
-    <string name="ok_message">Values Successfully Applied</string>
+    <string name="continu">继续</string>
+    <string name="exit">退出</string>
+    <string name="noroot">你的手机没有ROOT权限</string>
+    <string name="ok_message">所选值已成功应用！</string>
+    <string name="fail_message">操作失败！</string>
     <string-array name="fragments">
-        <item>Cpu Frequency</item>
-        <item>Time In States</item>
-        <item>I/O Control</item>
-        <item>Settings</item>
+        <item>CPU频率</item>
+        <item>状态时间</item>
+        <item>I/O控制</item>
+        <item>设置</item>
     </string-array>
     <string name="title_activity_governor_tuner_preference">Cpu Governor Tuning</string>
 
-    <string name="cpu_frequency">CPU</string>
-    <string name="gpu_frequency">GPU</string>
-    <string name="io">I/O Control</string>
-    <string name="wakelocks">Wakelocks</string>
-    <string name="cpu_hotplug">CPU Hotplug</string>
+    <string name="kernel">内核</string>
+    <string name="stats">状态</string>
+    <string name="tools">工具</string>
+    <string name="misc">其它</string>
+
+    <string name="cpu">CPU</string>
+    <string name="cpuset">Cpuset</string>
+    <string name="core_control">Core</string>
+    <string name="gpu">GPU</string>
+    <string name="io">I/O</string>
+    <string name="wakelocks">唤醒锁</string>
+    <string name="cpu_hotplug">CPU热插拔</string>
+    <string name="thermal_control">Theraml</string>
     <string name="time_in_state">Time In State</string>
-    <string name="settings">Settings</string>
-    <string name="vm">Virtual Memory</string>
-    <string name="build_prop">Build Prop Editor</string>
+    <string name="settings">设置</string>
+    <string name="vm">虚拟内存</string>
+    <string name="build_prop">Build.Prop编辑器</string>
+    <string name="battery_charger">电池充电</string>
+
+    <string name="cpus_ranage">Cpuset 所有核心</string>
+    <string name="cpus_ranage_desc">表示当前可以分配的核心序号范围，如0-7则表示你的设备上有8个核心可以被分配。核心序号从0开始。此值是不可改变的。</string>
+    <string name="cpuset_system_background_cpus">系统后台进程</string>
+    <string name="cpuset_system_background_cpus_desc">指定系统进程在后台运行时可以使用的CPU资源，分配太少可能导致应用安装缓慢、媒体库更新延迟等问题。</string>
+    <string name="cpuset_background_cpus">用户后台进程</string>
+    <string name="cpuset_background_cpus_desc">指定用户后台程序可使用的CPU，分配较少的核心可避免后台过多导致卡顿，但会导致指定的核心负载更高。</string>
+    <string name="cpuset_foreground_cpus">前台进程</string>
+    <string name="cpuset_foreground_cpus_desc">通常分配所有核心或大部分核心，不推荐更改</string>
+    <string name="cpuset_foreground_boost_cpus">前台进程(Boost)</string>
+    <string name="cpuset_foreground_boost_cpus_desc">前台进程(Boost)</string>
+
+    <string name="invalid_cpuset">无效的设置，你至少需要选中一个核心！</string>
 
     <!--Time in State -->
     <string name="total_time">Total Time</string>
     <string name="deep_sleep">Deep Sleep</string>
     <string name="time_since">Time Since</string>
     <string name="kernel_info">Kernel Info</string>
+
+    <string name="charger_limit">充电限制</string>
+    <string name="charger_max_limit">最大充电速度（ma）</string>
+    <string name="value_to_lager">这个值也太夸张了点吧，小心Boom！</string>
+    <string name="charger_wram_temp">充电警戒温度（°C）</string>
+    <string name="allow_charger">允许充电</string>
+    <string name="allow_charger_desc">此功能是高度实验性的，兼容的设备并不多，而且对于兼容的设备效果可能也不同。部分设备可以实现不充电的情况下使用电源供电，而有些设备则会使用电池供电。</string>
+
+    <string name="core_toggle">核心开关</string>
+    <string name="core_toggle_bigcore">核心开关(Big)</string>
+
+    <string name="unsupport_this_device">不支持该设备！</string>
+
+    <string name="thermal_vdd_restriction">VDD限制</string>
+    <string name="thermal_vdd_restriction_desc">特么的我也不知道这是什么鬼东西啊，只是有这个选项而已</string>
+    <string name="thermal_core_control">核心控制</string>
+    <string name="thermal_core_control_desc">这也不知道是什么鬼东西啊，总之就是有这个选项。骁龙800-810这些设备关了温控大约会热炸</string>
+    <string name="thermal_parameters">温度门限</string>
+    <string name="thermal_parameters_desc">这还是不知道啥玩意，总之就是这个选项</string>
 
     <!--Battery Stats -->
     <string name="times">times</string>
@@ -44,21 +88,39 @@
         <item>Cpu Wakelocks</item>
         <item>Alarm Triggers</item>
     </string-array>
+    <string name="selinux_limit">功能受（selinux）限制，无法使用！</string>
 
     <!--Frequency Scaling -->
-    <string name="core">Core</string>
+    <string name="core">核心</string>
+    <string name="cluster_0">Little核心集群</string>
+    <string name="cluster_1">Big核心集群</string>
     <string name="image_description">Image Icon</string>
-    <string name="max_frequency">Maximum Frequency</string>
-    <string name="min_frequency">Minimum Frequency</string>
-    <string name="scaling_governor">Scaling Governor</string>
-    <string name="apply">Apply</string>
-    <string name="governor_applied">Governor Successfully Applied</string>
+    <string name="max_frequency">最大频率</string>
+    <string name="min_frequency">最小频率</string>
+    <string name="cpu_frequency">频率</string>
+    <string name="cpu_governor">调节器</string>
+    <string name="cpu_change_governor">更改调节器</string>
+    <string name="cpu_change_governor_desc">更改调节器</string>
+    <string name="scaling_governor">更改CPU频率调节器，大多数设备推荐使用interactive模式</string>
+    <string name="gorvernor_parameters">调节器参数</string>
+    <string name="gorvernor_parameters_fine_tune">对调节器的参数进行调整，以达到最佳效果</string>
+    <string name="apply">应用</string>
+    <string name="governor_applied">调节器应用成功！</string>
 
+    <string name="gpu_freq">GPU频率</string>
+    <string name="gpu_min_freq">GPU最小频率</string>
+    <string name="gpu_max_freq">GPU最大频率</string>
+    <string name="gpu_governor">GPU调节器</string>
+    <string name="gpu_change_governor">更改GPU调节器</string>
+
+    <string name="disk_io_scheduler">磁盘I/O调度</string>
+    <string name="disk_io_read_ahead_cache">读取预取缓存大小</string>
     <string name="io_scheduler">I/O Scheduler</string>
     <string name="read_ahead_cache">Read Ahead Cache</string>
 
+    <string name="boot_applay_select_settings">手机开机时自动应用已选设置</string>
+    <string name="boot_auto_apply">自启动</string>
+
     <!--Preferences -->
     <string name="apply_on_boot">select_apply_on_boot</string>
-
-
 </resources>

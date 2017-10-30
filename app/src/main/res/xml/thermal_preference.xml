@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/core_toggle">
+        <SwitchPreference android:persistent="true" android:title="@string/thermal_vdd_restriction" android:summary="@string/thermal_vdd_restriction_desc" android:key="thermal_vdd_restriction"></SwitchPreference>
+        <SwitchPreference android:persistent="true" android:title="@string/thermal_core_control" android:summary="@string/thermal_core_control_desc" android:key="thermal_core_control"></SwitchPreference>
+        <SwitchPreference android:persistent="true" android:title="@string/thermal_parameters" android:summary="@string/thermal_parameters_desc" android:key="thermal_parameters"></SwitchPreference>
+    </PreferenceCategory>
+</PreferenceScreen>

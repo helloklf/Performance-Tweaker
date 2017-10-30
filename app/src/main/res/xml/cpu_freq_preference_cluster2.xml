@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/cluster_1">
+        <ListPreference
+            android:key="cpu_min_freq_pref2"
+            android:persistent="true"
+            android:title="@string/min_frequency" />
+        <ListPreference
+            android:key="cpu_max_freq_pref2"
+            android:persistent="true"
+            android:title="@string/max_frequency" />
+        <ListPreference
+            android:key="governor_pref2"
+            android:persistent="true"
+            android:summary="@string/cpu_change_governor"
+            android:title="@string/cpu_change_governor_desc" />
+        <Preference
+            android:key="governor_tune_pref2"
+            android:persistent="true"
+            android:summary="@string/gorvernor_parameters_fine_tune"
+            android:title="@string/gorvernor_parameters" />
+    </PreferenceCategory>
+</PreferenceScreen>

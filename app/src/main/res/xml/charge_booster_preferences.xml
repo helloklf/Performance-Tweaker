@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/charger_limit">
+        <SwitchPreference
+            android:key="allow_charger"
+            android:summary="@string/allow_charger_desc"
+            android:title="@string/allow_charger" />
+        <EditTextPreference
+            android:inputType="numberSigned"
+            android:key="limit_max_value"
+            android:summary=""
+            android:title="@string/charger_max_limit"></EditTextPreference>
+        <EditTextPreference
+            android:inputType="numberSigned"
+            android:key="wram_temp_value"
+            android:summary=""
+            android:title="@string/charger_wram_temp"></EditTextPreference>
+    </PreferenceCategory>
+</PreferenceScreen>

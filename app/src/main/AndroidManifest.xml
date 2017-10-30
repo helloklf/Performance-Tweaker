@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.performancetweaker.app"
+    package="com.omarea.kernel"
     android:installLocation="internalOnly">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -19,27 +19,27 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.performancetweaker.app.ui.MainActivity"
+            android:name="com.omarea.kernel.ui.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
+        <!--
         <receiver
-            android:name="com.performancetweaker.app.receivers.BootReceiver"
+            android:name="com.omarea.kernel.receivers.BootReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
-
                 <category android:name="android.intent.category.HOME" />
             </intent-filter>
         </receiver>
+        -->
 
-        <service android:name="com.performancetweaker.app.services.BootService" />
+        <service android:name="com.omarea.kernel.services.BootService" />
 
     </application>
 
